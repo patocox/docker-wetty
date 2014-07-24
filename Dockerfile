@@ -5,6 +5,7 @@ RUN apt-get -qqy update
 RUN apt-get -qqy install git nodejs npm
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
+RUN apt-get install -y vim
 RUN git clone https://github.com/krishnasrinivas/wetty.git
 WORKDIR /wetty
 RUN npm install
